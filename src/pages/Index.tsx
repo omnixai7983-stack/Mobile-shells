@@ -8,55 +8,91 @@ import phone3 from "@/assets/phone-3.jpg";
 import phone4 from "@/assets/phone-4.jpg";
 import phone5 from "@/assets/phone-5.jpg";
 import phone6 from "@/assets/phone-6.jpg";
+import phone7 from "@/assets/phone-7.jpg";
+import phone8 from "@/assets/phone-8.jpg";
+import phone9 from "@/assets/phone-9.jpg";
+import phone10 from "@/assets/phone-10.jpg";
 
 const phones = [
   {
-    name: "Galaxy Ultra Pro Max",
+    name: "Apple iPhone 17 Pro",
     image: phone1,
-    originalPrice: 1299,
-    discountedPrice: 675,
-    specs: ["6.8\" AMOLED Display", "200MP Triple Camera", "5000mAh Battery", "12GB RAM"],
+    originalPrice: 1399,
+    discountedPrice: 713,
+    specs: ["6.7\" Super Retina XDR", "48MP Pro Camera System", "A18 Pro Chip", "8GB RAM"],
     rating: 5
   },
   {
-    name: "iPhone Zenith Elite",
+    name: "OnePlus 13s 5G",
     image: phone2,
-    originalPrice: 1199,
-    discountedPrice: 623,
-    specs: ["6.7\" Super Retina XDR", "48MP Pro Camera", "A17 Pro Chip", "8GB RAM"],
+    originalPrice: 1099,
+    discountedPrice: 560,
+    specs: ["6.82\" AMOLED Display", "50MP Hasselblad Camera", "150W SuperVOOC", "16GB RAM"],
     rating: 5
   },
   {
-    name: "Pixel Vision X",
+    name: "Oppo Premium 5G",
     image: phone3,
-    originalPrice: 999,
-    discountedPrice: 519,
-    specs: ["6.5\" OLED Display", "50MP AI Camera", "Tensor G4 Chip", "12GB RAM"],
+    originalPrice: 1199,
+    discountedPrice: 611,
+    specs: ["6.7\" AMOLED Display", "50MP Quad Camera", "100W SuperVOOC", "12GB RAM"],
+    rating: 5
+  },
+  {
+    name: "Samsung Galaxy A56 5G",
+    image: phone4,
+    originalPrice: 599,
+    discountedPrice: 305,
+    specs: ["6.6\" Super AMOLED", "50MP Triple Camera", "5000mAh Battery", "8GB RAM"],
     rating: 4
   },
   {
-    name: "OnePlus Quantum 12",
-    image: phone4,
-    originalPrice: 899,
-    discountedPrice: 467,
-    specs: ["6.7\" Fluid AMOLED", "64MP Hasselblad Camera", "150W Fast Charge", "16GB RAM"],
-    rating: 5
-  },
-  {
-    name: "Xiaomi Fusion Pro",
+    name: "Realme 14 Pro+ 5G",
     image: phone5,
     originalPrice: 799,
-    discountedPrice: 415,
-    specs: ["6.67\" AMOLED Display", "108MP Camera", "120W HyperCharge", "12GB RAM"],
+    discountedPrice: 407,
+    specs: ["6.7\" AMOLED Display", "200MP OIS Camera", "120W HyperCharge", "12GB RAM"],
+    rating: 5
+  },
+  {
+    name: "Redmi Note 14 5G",
+    image: phone6,
+    originalPrice: 499,
+    discountedPrice: 254,
+    specs: ["6.67\" AMOLED Display", "108MP Camera", "5000mAh Battery", "8GB RAM"],
     rating: 4
   },
   {
-    name: "Realme Apex Ultra",
-    image: phone6,
-    originalPrice: 699,
-    discountedPrice: 363,
-    specs: ["6.6\" Super AMOLED", "50MP Sony Camera", "5000mAh Battery", "8GB RAM"],
+    name: "Nothing Phone 5G",
+    image: phone7,
+    originalPrice: 899,
+    discountedPrice: 458,
+    specs: ["6.55\" OLED Display", "50MP Dual Camera", "Glyph Interface", "12GB RAM"],
+    rating: 5
+  },
+  {
+    name: "Oppo Reno 14 5G",
+    image: phone8,
+    originalPrice: 749,
+    discountedPrice: 382,
+    specs: ["6.7\" AMOLED Display", "64MP Portrait Camera", "80W SuperVOOC", "12GB RAM"],
     rating: 4
+  },
+  {
+    name: "Samsung Galaxy S22 Ultra 5G",
+    image: phone9,
+    originalPrice: 1199,
+    discountedPrice: 611,
+    specs: ["6.8\" Dynamic AMOLED", "108MP Quad Camera", "S Pen Integrated", "12GB RAM"],
+    rating: 5
+  },
+  {
+    name: "OnePlus 13s 5G",
+    image: phone10,
+    originalPrice: 1099,
+    discountedPrice: 560,
+    specs: ["6.82\" Fluid AMOLED", "50MP Hasselblad Triple Camera", "100W Fast Charge", "16GB RAM"],
+    rating: 5
   }
 ];
 
@@ -68,7 +104,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <Badge className="mb-6 bg-destructive text-destructive-foreground text-lg px-6 py-2 font-bold">
-              LIMITED TIME OFFER - 48% OFF
+              LIMITED TIME OFFER - 49% OFF
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
               New Launch Phones
@@ -102,7 +138,7 @@ const Index = () => {
                 </div>
                 <div className="text-left">
                   <p className="font-semibold text-foreground">Save Big</p>
-                  <p className="text-sm text-muted-foreground">Up to 48%</p>
+                  <p className="text-sm text-muted-foreground">Up to 49%</p>
                 </div>
               </div>
             </div>
@@ -123,7 +159,7 @@ const Index = () => {
             <h2 className="text-4xl font-bold text-foreground">Featured Smartphones</h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover the latest flagship devices with premium features and unbeatable 48% discount
+            Discover the latest flagship devices with premium features and unbeatable 49% discount
           </p>
         </div>
         
