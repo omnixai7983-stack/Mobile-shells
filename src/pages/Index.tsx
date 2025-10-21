@@ -1,7 +1,8 @@
 import { PhoneCard } from "@/components/PhoneCard";
 import { AdSpace } from "@/components/AdSpace";
 import { Badge } from "@/components/ui/badge";
-import { Smartphone, Zap, Shield, TrendingUp } from "lucide-react";
+import { Smartphone, Zap, Shield, TrendingUp, Info } from "lucide-react";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 import phone1 from "@/assets/phone-1.jpg";
 import phone2 from "@/assets/phone-2.jpg";
 import phone3 from "@/assets/phone-3.jpg";
@@ -99,6 +100,14 @@ const phones = [
 const Index = () => {
   return (
     <main className="min-h-screen bg-background">
+      {/* Demo Disclaimer */}
+      <Alert className="rounded-none border-x-0 border-t-0 bg-primary/10 border-primary/20">
+        <Info className="h-5 w-5 text-primary" />
+        <AlertDescription className="text-center text-base font-medium text-foreground">
+          🎨 DEMO SHOWCASE SITE - This is a portfolio demonstration. Shopping functionality is not operational.
+        </AlertDescription>
+      </Alert>
+
       {/* Hero Section */}
       <header className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-accent/20 to-primary/5 py-16 md:py-24">
         <div className="container mx-auto px-4">

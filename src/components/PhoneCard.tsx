@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { ShoppingCart, Star } from "lucide-react";
+import { toast } from "@/hooks/use-toast";
 
 interface PhoneCardProps {
   name: string;
@@ -20,6 +21,14 @@ export const PhoneCard = ({
   specs,
   rating
 }: PhoneCardProps) => {
+  const handleAddToCart = () => {
+    toast({
+      title: "Demo Site Notice",
+      description: "This is a portfolio showcase. Shopping functionality is not available.",
+      duration: 4000,
+    });
+  };
+
   return (
     <Card className="group hover:shadow-[var(--hover-shadow)] transition-all duration-300 border-border overflow-hidden">
       <CardHeader className="p-0 relative">
@@ -66,7 +75,11 @@ export const PhoneCard = ({
         </div>
       </CardContent>
       <CardFooter className="p-6 pt-0">
-        <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" size="lg">
+        <Button 
+          onClick={handleAddToCart}
+          className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" 
+          size="lg"
+        >
           <ShoppingCart className="w-5 h-5 mr-2" />
           Add to Cart
         </Button>
